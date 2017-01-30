@@ -58,6 +58,10 @@ namespace BitmapCodeGUI
                 return BitmapCodeType . Monochrome;
             case 1:
                 return BitmapCodeType . RGB24;
+            case 2:
+                return BitmapCodeType . Hue2;
+            case 3:
+                return BitmapCodeType . Hue4;
             default:
                 throw new Exception ( "Invalid color mode selected." );
             }
@@ -81,16 +85,7 @@ namespace BitmapCodeGUI
                 try
                 {
                     var bytes = getEncoding () . GetBytes ( text . Text );
-                    BitmapCodeType type = 0;
-                    switch ( colorMode . SelectedIndex )
-                    {
-                    case 0:
-                        type = BitmapCodeType . Monochrome;
-                        break;
-                    case 1:
-                        type = BitmapCodeType . RGB24;
-                        break;
-                    }
+                    var type = getBitmapCodeType ();
                     var bmp = BitmapCode . FromBytesToBitmap (
                         bytes ,
                         int . Parse ( width . Text ) ,

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDecoding", "TestDecodin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitmapCodeGUI", "BitmapCodeGUI\BitmapCodeGUI.csproj", "{DF4746DF-90D0-47CF-9E8C-F88269D99E30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestColorConversion", "TestColorConversion\TestColorConversion.csproj", "{82460FC4-6F96-4287-B523-1A9F0E273B56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DF4746DF-90D0-47CF-9E8C-F88269D99E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF4746DF-90D0-47CF-9E8C-F88269D99E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF4746DF-90D0-47CF-9E8C-F88269D99E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82460FC4-6F96-4287-B523-1A9F0E273B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82460FC4-6F96-4287-B523-1A9F0E273B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82460FC4-6F96-4287-B523-1A9F0E273B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82460FC4-6F96-4287-B523-1A9F0E273B56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

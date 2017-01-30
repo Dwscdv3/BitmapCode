@@ -17,6 +17,8 @@
                             <ComboBox x:Name="colorMode" SelectedIndex="0">
                                 <ComboBoxItem Content="Monochrome"/>
                                 <ComboBoxItem Content="RGB24"/>
+                                <ComboBoxItem Content="Hue2"/>
+                                <ComboBoxItem Content="Hue4"/>
                             </ComboBox>
                         </StackPanel>
                         <StackPanel Margin="0,0,0,5">
