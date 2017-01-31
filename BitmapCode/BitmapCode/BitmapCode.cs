@@ -24,13 +24,17 @@ namespace Dwscdv3
             get { return a; }
             set
             {
-                if ( value >= 0 && value <= 1 )
+                if ( value < 0 )
                 {
-                    a = value;
+                    a = 0;
+                }
+                else if ( value > 1 )
+                {
+                    a = 1;
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException ();
+                    a = value;
                 }
             }
         }
@@ -40,13 +44,17 @@ namespace Dwscdv3
             get { return h; }
             set
             {
-                if ( value >= 0 && value < 1 )
+                if ( value < 0 )
                 {
-                    h = value;
+                    h = value + 1;
+                }
+                else if ( value >= 1 )
+                {
+                    h = value - 1;
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException ();
+                    h = value;
                 }
             }
         }
@@ -56,13 +64,17 @@ namespace Dwscdv3
             get { return s; }
             set
             {
-                if ( value >= 0 && value <= 1 )
+                if ( value < 0 )
                 {
-                    s = value;
+                    s = 0;
+                }
+                else if ( value > 1 )
+                {
+                    s = 1;
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException ();
+                    s = value;
                 }
             }
         }
@@ -72,13 +84,17 @@ namespace Dwscdv3
             get { return l; }
             set
             {
-                if ( value >= 0 && value <= 1 )
+                if ( value < 0 )
                 {
-                    l = value;
+                    l = 0;
+                }
+                else if ( value > 1 )
+                {
+                    l = 1;
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException ();
+                    l = value;
                 }
             }
         }
