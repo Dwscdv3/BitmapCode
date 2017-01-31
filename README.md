@@ -1,5 +1,5 @@
 # BitmapCode
-Share your data anywhere  
+Share your data anywhere  
 Release 暂无，请自行编译
 ##类型
 目前有 4 种类型，按抗压缩能力排列  
